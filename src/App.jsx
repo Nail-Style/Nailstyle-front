@@ -1,12 +1,15 @@
-import { useState } from 'react'
-
+import Routes from './routes/Routes';
+import NavBar from './components/navbar/NavBar';
+import Footer from './components/footer/Footer';
 
 function App() {
 
 
   return (
     <>
-    <h1>Gabriel</h1>
+      <NavBar/>
+        <Routes/>
+      <Footer/>
     </>
   )
 }
