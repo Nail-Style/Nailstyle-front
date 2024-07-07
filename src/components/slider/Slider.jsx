@@ -9,7 +9,7 @@ import image2 from '../../assets/image2.jpg'
 import image3 from '../../assets/image3.jpg'
 import image4 from '../../assets/image4.jpg'
 
-const images = [image1, image2, image3, image4]
+
 
 const Carousel = styled(motion.div)`
   cursor: grab;
@@ -36,7 +36,7 @@ const Carousel_Img = styled(SwiperSlide)`
   }
 `
 const Slider = ({ settings }) => {
-    
+  const images = [image1, image2, image3, image4]
   return (
     <Carousel>
       <Inner_Carousel
