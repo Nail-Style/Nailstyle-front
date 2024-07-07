@@ -10,7 +10,7 @@ const NavBar = () => {
   align-items: center;
   gap: 10px;
   position: relative;
-  z-index: 2;
+  z-index: 999;
   `
   const H2_Logo = styled(motion.h2)`
     padding: 0;
@@ -30,7 +30,7 @@ const NavBar = () => {
         <Img_Logo src={LogoNailstyle} alt="LogoNailstyle" initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}/>
-            
+
       <H2_Logo initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}>Nailstyle</H2_Logo>

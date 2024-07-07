@@ -10,9 +10,11 @@ export const Global = createGlobalStyle`
     }
     
     html,body{
+        padding: 0;
+        margin: 0;
         width: 100%;
-        height: 100%;
-        background: #fffdd0;
+        height: 4100px;
+        background: linear-gradient(to top left, #ADD8E6, #dda0dd)no-repeat;
     }
 
 `
