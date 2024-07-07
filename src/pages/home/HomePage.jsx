@@ -65,6 +65,8 @@ const Button = styled.button`
   cursor: pointer;
   transition: 0.2s ease-in-out;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 
   &:hover {
     background-color: #993399;
