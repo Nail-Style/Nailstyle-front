@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 const FooterNavStyled = styled.footer`
+  position: relative;
+  left: 30px;
   height: 50px;
+  width: 1440px;
   background-color: #1e1e1e;
   position: relative;
   border: 2px solid #fff;

@@ -21,16 +21,51 @@ const HomePage = () => {
   align-items: center;
   //background-color: #fffdd0;
   background-attachment: fixed;
+
+  @media(max-width: 1239px){
+    width: 100%;
+  }
   `
   const Sections = styled.section`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 0;
   margin: 0;
   width: 1440px;
   height: 800px;
-  //border: 1px solid #fff;
+  border: 1px solid #fff;
   //border-radius: 8px;
-  background-color: #fffdd0;
+  background-color: #c00404;
+
+  @media(max-width: 1239px){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  /*@media(max-width: 726px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }*/
   `
+  const Sections1 = styled.section`
+  padding: 0;
+  margin: 0;
+  width: 1440px;
+  height: 800px;
+  border: 1px solid #fff;
+  //border-radius: 8px;
+  background-color: #c00404;
+
+  @media(max-width: 1239px){
+    width: 100%;
+  }
+  `
+
   const Section_BackGround = styled.div`
   width: 1440px;
   height: 800px;
@@ -40,7 +75,7 @@ const HomePage = () => {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(${BackGround});
+  //background-image: url(${BackGround});
   background-attachment: fixed;
   `
   const Main = styled.main`
@@ -50,7 +85,7 @@ const HomePage = () => {
   const TxtContainer = styled.div`
   margin: 50px;
   position: relative;
-  top: 120px;
+  //top: 120px;
   color: #fff;
   width: 35%;
   height: 35%;
@@ -61,6 +96,10 @@ const HomePage = () => {
   width: 100%;
   height: auto;
   font-family: "Poppins", sans-serif;
+
+  @media(max-width: 1239px){
+    font-size: 25px;
+  }
 `
   const Line = styled(motion.p)`
   display: flex;
@@ -68,6 +107,10 @@ const HomePage = () => {
   width: 100%;
   height: auto;
   font-family: "Poppins", sans-serif;
+
+  @media(max-width: 1239px){
+    font-size: 14px;
+  }
 `
   const Button = styled.button`
   border: 2px solid #fff;
@@ -106,8 +149,8 @@ const HomePage = () => {
   height: 50%;
   width: 40%;
   position: relative;
-  left: 118vh;
-  bottom: 32vh;
+  //left: 118vh;
+  //bottom: 32vh;
   border: none;
   border-width: 8px;
   border-style: solid;
@@ -121,7 +164,13 @@ const HomePage = () => {
     cursor: pointer;
     transform: scale(1.1);
   }
+
+  @media(max-width: 1239px){
+    width: 40%;
+    height: auto;
+  }
 `
+
   const ContainerTxt = styled.div`
   padding: 0;
   margin: 0;
@@ -293,7 +342,6 @@ const ImgThreeStyled = styled.img`
 
     <Container>
       <Sections as={motion.div}>
-      <Main>
         <TxtContainer>
           
           <Heading initial={{ opacity: 0, y: -50 }}
@@ -308,14 +356,14 @@ const ImgThreeStyled = styled.img`
           <LoginButton>Login</LoginButton>
 
         </TxtContainer>
-      </Main>
-      
+
       <ManicureImage src={manicure} alt='imagem de unha' title='Unhas'  initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}/>
+
       </Sections>
       
-      <Sections>
+      <Sections1>
       <ContainerTxt className='container-txt'>
         <Subtitle>Por que escolher nossos serviços</Subtitle>
         <Descript>
@@ -327,8 +375,8 @@ const ImgThreeStyled = styled.img`
         <Img2 src={image2} alt='imagem de unha'/>
         <Img3 src={image3} alt='imagem de unha'/>
       </ContainerImg>
-      </Sections>
-      <Sections>
+      </Sections1>
+      <Sections1>
       <ContainerTextStyled>
         <ContainerServiceStyled>Com o quê trabalhamos</ContainerServiceStyled>
         <ContainerDescriptStyled>
@@ -354,13 +402,13 @@ const ImgThreeStyled = styled.img`
         <ImgTwoStyled src={image2} alt='imagem de unha'/>
         <ImgThreeStyled src={image3} alt='imagem de unha'/>
       </ContainerCardStyled>
-      </Sections>
-      <Sections>
+      </Sections1>
+      <Sections1>
         <h2>Seções</h2>
-      </Sections>
-      <Sections>
+      </Sections1>
+      <Sections1>
         <h2>Seções</h2>
-      </Sections>
+      </Sections1>
     </Container>
   )
 }

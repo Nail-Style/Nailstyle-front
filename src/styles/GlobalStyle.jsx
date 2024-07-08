@@ -13,7 +13,7 @@ export const Global = createGlobalStyle`
         padding: 0;
         margin: 0;
         width: 100%;
-        height: 4100px;
+        height: 4126px;
         background: linear-gradient(to top left, #ADD8E6, #dda0dd)no-repeat;
     }
 
